@@ -1,6 +1,20 @@
 <template>
-    <h1>Vue 3 App</h1>
-    <Home />
+    <n-card content-style="padding: 0;">
+        <n-tabs
+            type="line"
+            size="large"
+            :tabs-padding="20"
+            pane-style="padding: 20px;"
+        >
+            <n-tab-pane name="home">
+                <Home />
+            </n-tab-pane>
+            
+            <n-tab-pane name="about">
+                about
+            </n-tab-pane>
+        </n-tabs>
+    </n-card>
 </template>
 
 <script setup>

@@ -1,18 +1,15 @@
 <template>
     <h1>Vue 3 App</h1>
-    {{ count }}
+    <Home />
 </template>
 
 <script setup>
-    import { ref, onMounted } from 'vue'
+    import { ref, onMounted, defineComponent } from 'vue'
 
-    const count = ref(10)
-
-    function increment() {
-        count.value++
-    }
+    import Home from './pages/Home.vue'
 
     onMounted(() => {
-        console.log(`The initial count is ${count.value}.`)
+        console.log("From App")
     })
+
 </script>
